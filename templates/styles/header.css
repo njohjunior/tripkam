@@ -1,0 +1,147 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.point {
+  color: #084d2b;
+  font-size: 20px;
+}
+
+nav {
+  border: none;
+  border-radius: 50px;
+  background-color: #c4c4c4;
+  padding-right: 0;
+  box-shadow: 3px 3px 5pc rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  font-size: 16px;
+  height: 50px;
+  font-weight: 600;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+nav a:hover {
+  color: #084d2b;
+}
+
+.btn {
+  background-color: #084d2b;
+  color: white;
+  font-family: montserrat;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #084d2b;
+  transition: all 0.3s ease-in;
+  font-family: montserrat;
+  font-weight: 600;
+}
+
+/* menu mobile */
+ion-icon {
+  height: 26px;
+  width: 26px;
+}
+
+.open-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #084d2bbd;
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li,
+a {
+  width: 100%;
+}
+
+.sidebar li:hover {
+  background-color: white;
+  color: #084d2b;
+}
+
+/* media responsive */
+
+@media (max-width: 950px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  nav .open-btn a {
+    color: black;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 950px) {
+  .hideOnPC {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  header {
+    padding: 5px 20px;
+  }
+}
