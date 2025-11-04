@@ -1,0 +1,159 @@
+.hero {
+  height: 85vh;
+  background-image: url(../assets/Hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.hero .gauche {
+  width: 70%;
+}
+
+.hero .droit {
+  height: 80%;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero .gauche div button {
+  font-family: montserrat;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 15px 30px;
+}
+
+.decouvrir {
+  color: white;
+  background-color: #084d2b;
+  margin-right: 3rem;
+}
+
+.planifier {
+  color: #084d2b;
+}
+
+.decouvrir:hover,
+.planifier:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+h1 {
+  font-family: poppins;
+  font-size: 60px;
+  line-height: 120%;
+  color: white;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: #084d2b; /* Sets the fill color of the text */
+  -webkit-text-stroke: 2px white; /* Sets a 2px black outline */
+}
+
+.hero div p {
+  color: white;
+  font-size: 16px;
+  margin: 30px 0px;
+  width: 60vw;
+}
+
+/*Droite*/
+.social_evidence {
+  width: 60%;
+  height: auto;
+}
+
+.arrow {
+  opacity: 0.5;
+}
+
+/* media responsive */
+
+@media (max-width: 950px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero .gauche {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .droit {
+    display: none;
+  }
+
+  .hero div p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero div h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .decouvrir {
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero .gauche {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .droit {
+    display: none;
+  }
+
+  .hero div p {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .hero div h1 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .decouvrir, .planifier {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .hero .gauche div {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

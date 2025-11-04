@@ -7,25 +7,27 @@ header {
 }
 
 .logo {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  color: white;
 }
 
 .logo a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .point {
   color: #084d2b;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 nav {
   border: none;
   border-radius: 50px;
-  background-color: #c4c4c4;
+  background-color: #c4c4c485;
+  backdrop-filter: blur(10px);
   padding-right: 0;
   box-shadow: 3px 3px 5pc rgba(0, 0, 0, 0.1);
 }
@@ -74,6 +76,7 @@ nav a:hover {
 
 /* menu mobile */
 ion-icon {
+  color: white;
   height: 26px;
   width: 26px;
 }
@@ -88,6 +91,8 @@ ion-icon {
   position: fixed;
   top: 0;
   right: 0;
+  margin-top: -10px;
+  margin-right: -30px;
   height: 100vh;
   width: 250px;
   z-index: 999;
@@ -116,16 +121,12 @@ a {
     display: none;
   }
 
-  header {
-    justify-content: space-between;
-  }
-
   nav {
     background-color: rgba(255, 255, 255, 0);
   }
 
   nav .open-btn a {
-    color: black;
+    color: white;
     padding: 0px;
   }
 }
@@ -138,10 +139,6 @@ a {
 
 @media (max-width: 430px) {
   .sidebar {
-    width: 100%;
-  }
-
-  header {
-    padding: 5px 20px;
+    width: 100vw;
   }
 }
