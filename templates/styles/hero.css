@@ -1,5 +1,5 @@
 .hero {
-  height: 85vh;
+  height: 80vh;
   background-image: url(../assets/Hero.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,11 +24,12 @@
   align-items: flex-end;
 }
 
-.hero .gauche div button {
-  font-family: montserrat;
-  font-weight: 600;
+.decouvrir,
+.planifier {
+  text-decoration: none;
+  padding: 10px 30px;
   border-radius: 30px;
-  padding: 15px 30px;
+  font-weight: 600;
 }
 
 .decouvrir {
@@ -39,6 +40,7 @@
 
 .planifier {
   color: #084d2b;
+  background-color: white;
 }
 
 .decouvrir:hover,
@@ -79,7 +81,7 @@ h1 span {
 
 /* media responsive */
 
-@media (max-width: 950px) {
+@media (max-width: 992px) {
   .hero {
     display: flex;
     flex-direction: row;
@@ -112,8 +114,7 @@ h1 span {
   }
 }
 
-
-@media (max-width: 430px) {
+@media (max-width: 576px) {
   .hero {
     height: 70vh;
     display: flex;
@@ -144,7 +145,13 @@ h1 span {
     text-align: center;
   }
 
-  .decouvrir, .planifier {
+  h1 span {
+    color: #084d2b; /* Sets the fill color of the text */
+    -webkit-text-stroke: 0.5px white; /* Sets a 2px black outline */
+  }
+
+  .decouvrir,
+  .planifier {
     margin: 0;
     font-size: 14px;
   }
@@ -155,5 +162,19 @@ h1 span {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .decouvrir {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .planifier {
+    text-align: center;
+  }
+
+  .planifier,
+  .decouvrir {
+    padding: 7px 20px;
   }
 }
