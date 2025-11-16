@@ -1,0 +1,50 @@
+.partners {
+  width: 100%;
+  overflow: hidden;
+  background: #fafafa;
+  padding: 30px 0;
+}
+
+.partners-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scroll 18s linear infinite;
+}
+
+.partners img {
+  width: 140px; /* Taille par défaut */
+  height: auto;
+  flex-shrink: 0;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.partners img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* 📱 RESPONSIVE : agrandir les logos sur mobile */
+@media (max-width: 768px) {
+  .partners img {
+    width: 180px; /* Plus grand sur mobile */
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners img {
+    width: 200px; /* Encore plus grand sur petits écrans */
+  }
+}

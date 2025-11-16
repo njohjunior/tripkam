@@ -8,6 +8,10 @@ body {
   font-family: montserrat;
 }
 
+p {
+  line-height: 1.4em;
+}
+
 button {
   font-size: 16px;
   padding-left: 30px;
